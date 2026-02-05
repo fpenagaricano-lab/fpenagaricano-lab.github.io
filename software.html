@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software — Peñagaricano Lab</title>
+  <meta name="description" content="Open-source software and tools developed by the Peñagaricano Lab for livestock genomics research.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🧬</text></svg>">
+</head>
+<body>
+
+<nav class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-brand-name">Peñagaricano Lab</span>
+      <span class="nav-brand-sub">Quantitative Genomics · UW-Madison</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="software.html" class="active">Software</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="opportunities.html">Join Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Software &amp; Tools</h1>
+    <p>Open-source tools for the livestock research community</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <div class="research-intro">
+      <p>
+        We develop open-source computational tools to support genomic and environmental research
+        in livestock. All tools are freely available and designed to be accessible to researchers
+        with varying levels of programming experience.
+      </p>
+    </div>
+
+    <!-- EnrichKit -->
+    <div class="software-detail-card" id="enrichkit">
+      <div class="software-detail-header">
+        <h2>EnrichKit</h2>
+        <div class="software-detail-tagline">A multi-omics tool for livestock research</div>
+      </div>
+      <div class="software-detail-body">
+        <p>
+          EnrichKit is a comprehensive R-based tool designed for functional characterization of gene
+          lists in livestock species. It maps genomic coordinates (from GWAS, RNA-seq, WGBS, etc.) to
+          gene features and performs enrichment analysis using multiple biological databases including
+          Gene Ontology (GO), KEGG pathways, InterPro domains, and medical subject headings.
+        </p>
+        <h4>Features</h4>
+        <ul class="software-features">
+          <li>Maps genomic coordinates to gene features using species-specific annotations</li>
+          <li>Supports multiple livestock species (cattle, pig, chicken, sheep, horse)</li>
+          <li>Performs over-representation analysis (ORA) and gene set enrichment analysis (GSEA)</li>
+          <li>Integrates GO, KEGG, InterPro, and MeSH databases</li>
+          <li>Handles data from SNP arrays, WGS, RNA-seq, WGBS, and ATAC-seq</li>
+          <li>Generates publication-ready plots and summary tables</li>
+        </ul>
+        <div class="software-detail-links">
+          <a href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2025.1573374/" target="_blank" class="btn btn-primary">Read Paper</a>
+        </div>
+        <div class="software-tags-bar">
+          <span class="software-tag">R</span>
+          <span class="software-tag">Bioinformatics</span>
+          <span class="software-tag">Multi-omics</span>
+          <span class="software-tag">Functional Analysis</span>
+          <span class="software-tag">Livestock</span>
+        </div>
+        <div class="software-cite">
+          <strong>Citation:</strong> L Liu and F Peñagaricano (2025). EnrichKit: a multi-omics tool for livestock research. <em>Frontiers in Genetics</em> 16: 1573374.
+        </div>
+      </div>
+    </div>
+
+    <!-- greenfeedr -->
+    <div class="software-detail-card" id="greenfeedr">
+      <div class="software-detail-header">
+        <h2>greenfeedr</h2>
+        <div class="software-detail-tagline">An R-package for processing GreenFeed data</div>
+      </div>
+      <div class="software-detail-body">
+        <p>
+          greenfeedr is an R package that streamlines the processing and reporting of data collected
+          from GreenFeed systems (C-Lock Inc.), which measure individual enteric methane (CH&#8324;) and
+          carbon dioxide (CO&#8322;) emissions from ruminant animals. The package automates data cleaning,
+          quality control, and summary statistics, reducing processing time and ensuring consistency
+          across research groups.
+        </p>
+        <h4>Features</h4>
+        <ul class="software-features">
+          <li>Reads and parses raw GreenFeed output files</li>
+          <li>Applies customizable quality control filters</li>
+          <li>Calculates daily and period-level gas emission summaries</li>
+          <li>Generates standardized reports and visualizations</li>
+          <li>Supports multi-unit and multi-farm data</li>
+          <li>Integrates with existing R-based analysis workflows</li>
+        </ul>
+        <div class="software-detail-links">
+          <a href="https://www.sciencedirect.com/science/article/pii/S266691022400187X/" target="_blank" class="btn btn-primary">Read Paper</a>
+        </div>
+        <div class="software-tags-bar">
+          <span class="software-tag">R</span>
+          <span class="software-tag">GreenFeed</span>
+          <span class="software-tag">Methane</span>
+          <span class="software-tag">Emissions</span>
+          <span class="software-tag">Dairy Cattle</span>
+        </div>
+        <div class="software-cite">
+          <strong>Citation:</strong> G Martinez Boggio, P Lutz, M Harrison, KA Weigel, and F Peñagaricano (2025). greenfeedr: an R-package for processing and reporting GreenFeed data. <em>JDS Communications</em> 6: 227-230.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/UwMadison_institutional-logo.png" alt="UW-Madison" class="footer-logo">
+        <h3>Peñagaricano Lab</h3>
+        <p>
+          Quantitative Genomics &amp; Computational Biology<br>
+          Department of Animal &amp; Dairy Sciences<br>
+          University of Wisconsin-Madison<br>
+          1675 Observatory Drive<br>
+          Madison, WI 53706
+        </p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="people.html">People</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="software.html">Software</a></li>
+          <li><a href="opportunities.html">Opportunities</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://andysci.wisc.edu/" target="_blank">Animal &amp; Dairy Sciences</a></li>
+          <li><a href="https://www.wisc.edu/" target="_blank">UW-Madison</a></li>
+          <li><a href="https://scholar.google.com/citations?user=1J7uzm4AAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+          <li><a href="https://erp.wisc.edu/staff/penagaricano-francisco/" target="_blank">ERP Program</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Peñagaricano Lab · University of Wisconsin-Madison</span>
+      <a href="https://andysci.wisc.edu/" target="_blank">Department of Animal &amp; Dairy Sciences</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById('siteNav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; }});
+}, {threshold:0.1});
+document.querySelectorAll('.software-detail-card').forEach(el => {
+  el.style.opacity='0'; el.style.transform='translateY(20px)'; el.style.transition='opacity 0.6s ease, transform 0.6s ease'; observer.observe(el);
+});
+</script>
+</body>
+</html>

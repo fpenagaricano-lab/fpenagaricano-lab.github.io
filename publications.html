@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications — Peñagaricano Lab</title>
+  <meta name="description" content="Peer-reviewed publications from the Peñagaricano Lab at UW-Madison.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🧬</text></svg>">
+  <style>
+    .pub-year-toggle {
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .pub-year-toggle::before {
+      content: '▾';
+      display: inline-block;
+      font-size: 0.9rem;
+      transition: transform 0.25s ease;
+      color: var(--gold);
+    }
+    .pub-year-toggle.collapsed::before {
+      transform: rotate(-90deg);
+    }
+    .pub-year-body {
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+    .pub-year-body.collapsed {
+      max-height: 0 !important;
+    }
+    .selected-pubs-box {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      border-radius: var(--radius-lg);
+      padding: 2rem 2.25rem;
+      margin-bottom: 3rem;
+      color: var(--white);
+    }
+    .selected-pubs-box h2 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+    }
+    .selected-pubs-box .selected-sub {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 1.25rem;
+    }
+    .selected-pubs-box .pub-list {
+      list-style: none;
+    }
+    .selected-pubs-box .pub-item {
+      padding: 0.85rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.88rem;
+      line-height: 1.65;
+      color: rgba(255,255,255,0.75);
+    }
+    .selected-pubs-box .pub-item:last-child {
+      border-bottom: none;
+    }
+    .selected-pubs-box .pub-item:hover {
+      background: rgba(255,255,255,0.05);
+      padding-left: 0.75rem;
+      border-radius: var(--radius);
+    }
+    .selected-pubs-box .pub-journal {
+      font-style: italic;
+      color: rgba(255,255,255,0.5);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-brand-name">Peñagaricano Lab</span>
+      <span class="nav-brand-sub">Quantitative Genomics · UW-Madison</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html" class="active">Publications</a></li>
+      <li><a href="software.html">Software</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="opportunities.html">Join Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Publications</h1>
+    <p>Peer-reviewed publications from our group</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <div class="pub-header-bar">
+      <p>
+        For a complete and up-to-date list, visit
+        <a href="https://scholar.google.com/citations?user=1J7uzm4AAAAJ&hl=en" target="_blank"><strong>Google Scholar</strong></a>.
+      </p>
+    </div>
+
+    <!-- ============ SELECTED PUBLICATIONS ============ -->
+    <div class="selected-pubs-box">
+      <h2>Selected Publications</h2>
+      <p class="selected-sub">Representative work across the lab's research themes</p>
+      <ul class="pub-list">
+        <li class="pub-item">
+          Rezende, F. M., Nani, J. P., and Peñagaricano, F. (2019).
+          <a href="https://www.sciencedirect.com/science/article/pii/S0022030219300931" target="_blank">Genomic prediction of bull fertility in US Jersey dairy cattle.</a>
+          <span class="pub-journal">Journal of Dairy Science,</span> 102(4), 3230&ndash;3240.
+        </li>
+        <li class="pub-item">
+          Liu, L. &amp; Peñagaricano, F. (2025).
+          <a href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2025.1573374/full" target="_blank">EnrichKit: A multi-omics tool for livestock research.</a>
+          <span class="pub-journal">Frontiers in Genetics,</span> 16, 1573374.
+        </li>
+        <li class="pub-item">
+          Martinez-Boggio, G., Lutz, P., Harrison, M., Weigel, K. A., &amp; Peñagaricano, F. (2025).
+          <a href="https://www.sciencedirect.com/science/article/pii/S266691022400187X" target="_blank">greenfeedr: An R package for processing and reporting GreenFeed data.</a>
+          <span class="pub-journal">JDS Communications,</span> 6(2), 227&ndash;230.
+        </li>
+        <li class="pub-item">
+          Martinez-Boggio, G. et al. (2024).
+          <a href="https://www.nature.com/articles/s41598-024-76879-1" target="_blank">Revealing host genome&ndash;microbiome networks underlying feed efficiency in dairy cows.</a>
+          <span class="pub-journal">Scientific Reports,</span> 14, 26060.
+        </li>
+        <li class="pub-item">
+          Amor&iacute;n, R., Liu, L. et al. (2023).
+          <a href="https://www.nature.com/articles/s41598-023-28896-3" target="_blank">Maternal diet induces persistent DNA methylation changes in the muscle of beef calves.</a>
+          <span class="pub-journal">Scientific Reports,</span> 13, 1587.
+        </li>
+        <li class="pub-item">
+          Laporta, J., Dado-Senn, B., Guadagnin, A. R., Liu, L., &amp; Peñagaricano, F. (2025).
+          <a href="https://www.sciencedirect.com/science/article/pii/S002203022500061X" target="_blank">Preweaning heat stress alters liver transcriptome and DNA methylation in dairy calves.</a>
+          <span class="pub-journal">Journal of Dairy Science,</span> 108(4), 4390&ndash;4402.
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ 2026 ============ -->
+    <h3 class="pub-year-header pub-year-toggle collapsed" onclick="toggleYear(this)" data-year="2026">2026 <span class="pub-count-badge">2</span></h3>
+    <div class="pub-year-body collapsed" id="year-2026" style="max-height:0">
+      <ul class="pub-list">
+        <li class="pub-item">
+          Cortes-Hern&aacute;ndez, J. G., Ruiz-L&oacute;pez, F. J., Peñagaricano, F., Montaldo, H. H., et al. (2026).
+          SNPs with high linkage disequilibrium increase the explained genetic variance and the reliability of genomic predictions.
+          <span class="pub-journal">Animals,</span> 16(2), 337.
+        </li>
+        <li class="pub-item">
+          Guinan, F. L., Fourdraine, R. H., Peñagaricano, F., &amp; Weigel, K. A. (2026).
+          Genetic parameters for alternative resilience phenotypes in Holstein cows.
+          <span class="pub-journal">JDS Communications.</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ 2025 ============ -->
+    <h3 class="pub-year-header pub-year-toggle collapsed" onclick="toggleYear(this)" data-year="2025">2025 <span class="pub-count-badge">27</span></h3>
+    <div class="pub-year-body collapsed" id="year-2025" style="max-height:0">
+      <ul class="pub-list">
+        <li class="pub-item">
+          Cortes-Hern&aacute;ndez, J. G., Martinez-Boggio, G., Peñagaricano, F., Montaldo, H. H., et al. (2025).
+          Predicting productive, health, and reproductive traits in Mexican Holstein cattle using single nucleotide polymorphisms, haplotypes, and runs of homozygosity.
+          <span class="pub-journal">JDS Communications.</span>
+        </li>
+        <li class="pub-item">
+          Kendall, S. J., Martinez-Boggio, G., Arshad, U., Kennedy, K. M., Fukumori, R., et al. (2025).
+          Mitochondrial function and nutrient partitioning in high and low feed efficient multiparous Holstein dairy cows.
+          <span class="pub-journal">Journal of Dairy Science.</span>
+        </li>
+        <li class="pub-item">
+          Fernandez-Wallace, T., Arshad, U., Mancheno, M., Praisler, G., de la Paz, M. C., et al. (2025).
+          Metabolic and functional changes in T helper cells during the periparturient period of dairy cows.
+          <span class="pub-journal">Journal of Dairy Science.</span>
+        </li>
+        <li class="pub-item">
+          Cavani, L., Reyes, F. S., Van Os, J. M. C., Weigel, K. A., White, H. M., &amp; Peñagaricano, F. (2025).
+          Social dominance and feed efficiency: Genetic analysis of latency to first meal after fresh feed delivery and residual feed intake in dairy cows.
+          <span class="pub-journal">JDS Communications.</span>
+        </li>
+        <li class="pub-item">
+          Guinan, F. L., Fourdraine, R. H., Peñagaricano, F., &amp; Weigel, K. A. (2025).
+          Genetic parameters for alternative resilience phenotypes in Holstein cows.
+          <span class="pub-journal">JDS Communications.</span>
+        </li>
+        <li class="pub-item">
+          Chasi, B., Andrade, J. P., Monteiro, P. L. J., Castro, B., Moreno, E., Anta, E., Ali, N. N., et al. (2025).
+          Association of fertility traits with markers of oocyte competence in dairy cattle.
+          <span class="pub-journal">Journal of Dairy Science.</span>
+        </li>
+        <li class="pub-item">
+          Rocha, C. C., Silva, F. A. C. C., Cavani, L., Cordeiro, A. L. L., Maldonado, M. B. C., et al. (2025).
+          Endometrial gene expression predicts pregnancy outcome in Brahman cows.
+          <span class="pub-journal">Molecular Reproduction and Development,</span> 92(8), e70047.
+        </li>
+        <li class="pub-item">
+          Nascimento, B. M., Gaddis, K. L. P., Koltes, J. E., Tempelman, R. J., VandeHaar, M. J., et al. (2025).
+          Impact of heat stress on dry matter intake and residual feed intake in mid-lactation dairy cows.
+          <span class="pub-journal">Journal of Dairy Science,</span> 108(7), 7345&ndash;7353.
+        </li>
+        <li class="pub-item">
+          Cavani, L., Parker Gaddis, K. L., Baldwin, R. L., Santos, J. E. P., Koltes, J. E., et al. (2025).
+          Genetic characterisation of feeding patterns in lactating Holstein cows and their association with feed efficiency traits.
+          <span class="pub-journal">Journal of Animal Breeding and Genetics,</span> 142(4), 373&ndash;380.
+        </li>
+        <li class="pub-item">
+          Liu, L. &amp; Peñagaricano, F. (2025).
+          EnrichKit: A multi-omics tool for livestock research.
+          <span class="pub-journal">Frontiers in Genetics,</span> 16, 1573374.
+        </li>
+        <li class="pub-item">
+          Coelho Jr, W. M., Monteiro, H. F., Figueiredo, C. C., Mion, B., Santos, J. E. P., et al. (2025).
+          Associations of serum fatty acids, serum urea nitrogen, and ruminal ammonia nitrogen with residual feed intake in lactating dairy cows.
+          <span class="pub-journal">Journal of Dairy Science,</span> 108(5), 4839&ndash;4850.
+        </li>
+        <li class="pub-item">
+          Townsend, J., Gross, N., Peng, Z., Peñagaricano, F., Yang, Z., Ahsan, N., et al. (2025).
+          The embryonic DPPA3 gene stimulates the expression of pregnancy-related genes in bovine endometrial cells.
+          <span class="pub-journal">Journal of Dairy Science.</span>
+        </li>
+        <li class="pub-item">
+          Laporta, J., Dado-Senn, B., Guadagnin, A. R., Liu, L., &amp; Peñagaricano, F. (2025).
+          Preweaning heat stress alters liver transcriptome and DNA methylation in dairy calves.
+          <span class="pub-journal">Journal of Dairy Science,</span> 108(4), 4390&ndash;4402.
+        </li>
+        <li class="pub-item">
+          Nu&ntilde;ez, P., Martinez-Boggio, G., Casellas, J., Varona, L., Peñagaricano, F., et al. (2025).
+          Applying recursive modelling to assess the role of the host genome and the gut microbiome on feed efficiency in pigs.
+          <span class="pub-journal">animal,</span> 19(3), 101453.
+        </li>
+        <li class="pub-item">
+          Cavani, L., Novo, L. C., Reyes, F. S., Nascimento, B. M., VandeHaar, M. J., et al. (2025).
+          Associations between body temperature and feed efficiency traits in lactating Holstein cows.
+          <span class="pub-journal">JDS Communications,</span> 6(2), 256&ndash;260.
+        </li>
+        <li class="pub-item">
+          Martinez-Boggio, G., Lutz, P., Harrison, M., Weigel, K. A., &amp; Peñagaricano, F. (2025).
+          greenfeedr: An R package for processing and reporting GreenFeed data.
+          <span class="pub-journal">JDS Communications,</span> 6(2), 227&ndash;230.
+        </li>
+        <li class="pub-item">
+          Guinan, F. L., Fourdraine, R. H., Peñagaricano, F., &amp; Weigel, K. A. (2025).
+          Genetic analysis of daily milk weights in US Holsteins using pen-based contemporary groups.
+          <span class="pub-journal">JDS Communications,</span> 6(2), 237&ndash;240.
+        </li>
+        <li class="pub-item">
+          Nu&ntilde;ez Romano, P., Martinez-Boggio, G., Casellas, J., Varona, L., et al. (2025).
+          Applying recursive modelling to assess the role of the host genome and the gut microbiome on feed efficiency in pigs.
+          <span class="pub-journal">Cambridge University Press.</span>
+        </li>
+        <li class="pub-item">
+          Cortes-Hern&aacute;ndez, J. G., Garc&iacute;a-Ruiz, A., Peñagaricano, F., Montaldo, H. H., et al. (2025).
+          Uncovering the genetic basis of milk production traits in Mexican Holstein cattle based on individual markers and genomic windows.
+          <span class="pub-journal">PLoS ONE,</span> 20(2), e0314888.
+        </li>
+        <li class="pub-item">
+          Nu&ntilde;ez, P., Casto-Rebollo, C., Martinez-Boggio, G., Negro Rama, S., et al. (2025).
+          The gut microbiota as a predictor of feed efficiency and feeding behavior in Iberian pigs.
+          <span class="pub-journal">Journal of Animal Science,</span> 103, skaf268.
+        </li>
+        <li class="pub-item">
+          Heredia, D., Tarnonsky, F., Lopez-Duarte, M. C., Venturini, M., Podversich, F., et al. (2025).
+          Impact of dietary supplementation of beef cows with rumen-protected methionine during the periconceptional period on prenatal growth and performance to weaning.
+          <span class="pub-journal">Journal of Animal Science,</span> 103, skae384.
+        </li>
+        <li class="pub-item">
+          Casarotto, L. T., Jones, H. N., Chavatte-Palmer, P., Laporta, J., Peñagaricano, F., et al. (2025).
+          Late-gestation heat stress alters placental structure and function in multiparous dairy cows.
+          <span class="pub-journal">Journal of Dairy Science,</span> 108(1), 1125&ndash;1137.
+        </li>
+        <li class="pub-item">
+          Guinan, F. L., Fourdraine, R. H., Peñagaricano, F., &amp; Weigel, K. A. (2025).
+          Dairy cow resilience: data driven detection and quantification of perturbations using daily milk weights.
+          <span class="pub-journal">Journal of Dairy Science,</span> 108, 11173&ndash;11185.
+        </li>
+        <li class="pub-item">
+          Gonella-Diaza, A., Sponchiado, M., Rodrigues Fran&ccedil;a, M., Liu, L., Pugliesi, G., et al. (2025).
+          The metabolomic composition of the oviductal fluid is controlled by the periovulatory hormonal context in Bos indicus cows.
+          <span class="pub-journal">Biology of Reproduction,</span> 111(6), 1188&ndash;1201.
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ 2024 ============ -->
+    <h3 class="pub-year-header pub-year-toggle collapsed" onclick="toggleYear(this)" data-year="2024">2024 <span class="pub-count-badge">20</span></h3>
+    <div class="pub-year-body collapsed" id="year-2024" style="max-height:0">
+      <ul class="pub-list">
+        <li class="pub-item">
+          Toledo-Alvarado, H. O., Tempelman, R. J., Lopez-Cruz, M., VandeHaar, M. J., et al. (2024).
+          Selection indexes for residual feed intake derived from milk spectra.
+          <span class="pub-journal">Journal of Dairy Science,</span> 107(12), 11164&ndash;11179.
+        </li>
+        <li class="pub-item">
+          Pacheco, H. A., Rossoni, A., Cecchinato, A., &amp; Peñagaricano, F. (2024).
+          Genomic prediction of male fertility in Brown Swiss cattle.
+          <span class="pub-journal">JDS Communications,</span> 5(6), 568&ndash;571.
+        </li>
+        <li class="pub-item">
+          Martinez-Boggio, G., Monteiro, H. F., Lima, F. S., Figueiredo, C. C., Bisinotto, R. S., et al. (2024).
+          Revealing host genome&ndash;microbiome networks underlying feed efficiency in dairy cows.
+          <span class="pub-journal">Scientific Reports,</span> 14(1), 26060.
+        </li>
+        <li class="pub-item">
+          Martinez-Boggio, G., Monteiro, H. F., Lima, F. S., Figueiredo, C. C., Bisinotto, R. S., et al. (2024).
+          Investigating relationships between the host genome, rumen microbiome, and dairy cow feed efficiency using mediation analysis with structural equation modeling.
+          <span class="pub-journal">Journal of Dairy Science,</span> 107(10), 8193&ndash;8204.
+        </li>
+        <li class="pub-item">
+          Adkinson, A. Y., Abouhawwash, M., VandeHaar, M. J., Gaddis, K. L. P., Burchard, J., et al. (2024).
+          Assessing different cross-validation schemes for predicting novel traits using sensor data: An application to dry matter intake and residual feed intake using milk spectral data.
+          <span class="pub-journal">Journal of Dairy Science,</span> 107(10), 8084&ndash;8099.
+        </li>
+        <li class="pub-item">
+          Nascimento, B. M., Cavani, L., Caputo, M. J., Marinho, M. N., Borchers, M. R., et al. (2024).
+          Genetic relationships between behavioral traits and feed efficiency traits in lactating Holstein cows.
+          <span class="pub-journal">Journal of Dairy Science,</span> 107(10), 8141&ndash;8149.
+        </li>
+        <li class="pub-item">
+          Guinan, F. L., Fourdraine, R., Peñagaricano, F., &amp; Weigel, K. (2024).
+          Genetic parameters for daily milk weights in US Holsteins using pen-based contemporary groups.
+          <span class="pub-journal">Interbull Bulletin,</span> 1&ndash;7.
+        </li>
+        <li class="pub-item">
+          Toghiani, S., VanRaden, P. M., VandeHaar, M. J., Baldwin, R. L., Weigel, K. A., et al. (2024).
+          Dry matter intake in US Holstein cows: Exploring the genomic and phenotypic impact of milk components and body weight composite.
+          <span class="pub-journal">Journal of Dairy Science,</span> 107(9), 7009&ndash;7021.
+        </li>
+        <li class="pub-item">
+          Madureira, G., Mion, B., Van Winters, B., Peñagaricano, F., Li, J., &amp; Ribeiro, E. S. (2024).
+          Endometrial responsiveness to interferon-tau and its association with subsequent reproductive performance in dairy heifers.
+          <span class="pub-journal">Journal of Dairy Science,</span> 107(9), 7371&ndash;7391.
+        </li>
+        <li class="pub-item">
+          Guadagnin, A. R., Peñagaricano, F., Dahl, G. E., &amp; Laporta, J. (2024).
+          Programming effects of intrauterine hyperthermia on adrenal gland development.
+          <span class="pub-journal">Journal of Dairy Science,</span> 107(8), 6308&ndash;6321.
+        </li>
+        <li class="pub-item">
+          Novo, L. C., Gaddis, K. L. P., Wu, X. L., McWhorter, T. M., Burchard, J., Norman, H. D., et al. (2024).
+          Genetic parameters and trends for Johne's disease in US Holsteins: An updated study.
+          <span class="pub-journal">Journal of Dairy Science,</span> 107(7), 4804&ndash;4821.
+        </li>
+        <li class="pub-item">
+          Arshad, U., Peñagaricano, F., &amp; White, H. M. (2024).
+          Effects of feeding rumen-protected lysine during the postpartum period on performance and amino acid profile in dairy cows: A meta-analysis.
+          <span class="pub-journal">Journal of Dairy Science,</span> 107(7), 4537&ndash;4557.
+        </li>
+        <li class="pub-item">
+          Martinez-Boggio, G., Monteiro, H. F., Lima, F. S., Figueiredo, C. C., Bisinotto, R. S., et al. (2024).
+          Host and rumen microbiome contributions to feed efficiency traits in Holstein cows.
+          <span class="pub-journal">Journal of Dairy Science,</span> 107(5), 3090&ndash;3103.
+        </li>
+        <li class="pub-item">
+          Guinan, F. L., Fourdraine, R. H., Peñagaricano, F., &amp; Weigel, K. A. (2024).
+          Genetic analysis of lactation consistency in US Holsteins using temporal variation in daily milk weights.
+          <span class="pub-journal">Journal of Dairy Science,</span> 107(4), 2194&ndash;2206.
+        </li>
+        <li class="pub-item">
+          Weigel, K., Chasco, A., Pacheco, H., Sigdel, A., Guinan, F., Lauber, M., Fricke, P., et al. (2024).
+          Genomic selection in dairy cattle: impact and contribution to the improvement of bovine fertility.
+          <span class="pub-journal">Clinical Theriogenology,</span> 16.
+        </li>
+        <li class="pub-item">
+          Houlahan, K., Schenkel, F. S., Miglior, F., Jamrozik, J., Stephansen, R. B., et al. (2024).
+          Estimation of genetic parameters for feed efficiency traits using random regression models in dairy cattle.
+          <span class="pub-journal">Journal of Dairy Science,</span> 107(3), 1523&ndash;1534.
+        </li>
+        <li class="pub-item">
+          van Staaveren, N., de Oliveira, H. R., Houlahan, K., Chud, T. C. S., Oliveira Jr, G. A., et al. (2024).
+          The Resilient Dairy Genome Project&mdash;A general overview of methods and objectives related to feed efficiency and methane emissions.
+          <span class="pub-journal">Journal of Dairy Science,</span> 107(3), 1510&ndash;1522.
+        </li>
+        <li class="pub-item">
+          Monteiro, H. F., Figueiredo, C. C., Mion, B., Santos, J. E. P., Bisinotto, R. S., et al. (2024).
+          An artificial intelligence approach of feature engineering and ensemble methods depicts the rumen microbiome contribution to feed efficiency in dairy cows.
+          <span class="pub-journal">Animal Microbiome,</span> 6(1), 5.
+        </li>
+        <li class="pub-item">
+          Cavani, L., Gaddis, K. L. P., Baldwin, R. L., Santos, J. E. P., Koltes, J. E., et al. (2024).
+          Consistency of dry matter intake in Holstein cows: heritability estimates and associations with feed efficiency.
+          <span class="pub-journal">Journal of Dairy Science,</span> 107(2), 1054&ndash;1067.
+        </li>
+        <li class="pub-item">
+          Novo, L. C., Poindexter, M. B., Rezende, F. M., Santos, J. E. P., Nelson, C. D., et al. (2024).
+          Identification of genetic variants and individual genes associated with postpartum hypocalcemia in Holstein cows.
+          <span class="pub-journal">Scientific Reports,</span> 13(1), 21900.
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ 2023 ============ -->
+    <h3 class="pub-year-header pub-year-toggle collapsed" onclick="toggleYear(this)" data-year="2023">2023 <span class="pub-count-badge">12</span></h3>
+    <div class="pub-year-body collapsed" id="year-2023" style="max-height:0">
+      <ul class="pub-list">
+        <li class="pub-item">
+          Stephansen, R. B., Martin, P., Manzanilla-Pech, C. I. V., Gredler-Grandl, B., et al. (2023).
+          Novel genetic parameters for genetic residual feed intake in dairy cattle using time series data from multiple parities and countries in North America and Europe.
+          <span class="pub-journal">Journal of Dairy Science,</span> 106(12), 9078&ndash;9094.
+        </li>
+        <li class="pub-item">
+          Peñagaricano, F. (2023).
+          Genomics and dairy bull fertility.
+          <span class="pub-journal">The Veterinary Clinics of North America. Food Animal Practice,</span> S0749-0720.
+        </li>
+        <li class="pub-item">
+          Silva, F. A. C. C., Martins, T., Sponchiado, M., Rocha, C. C., Ashrafi, N., Graham, S. F., et al. (2023).
+          Pre-estrus progesterone does not affect post-estrus luminal metabolome in cross-bred beef cows.
+          <span class="pub-journal">Reproduction,</span> 166(2), 99&ndash;116.
+        </li>
+        <li class="pub-item">
+          Pacheco, H. A., Rossoni, A., Cecchinato, A., &amp; Peñagaricano, F. (2023).
+          Identification of runs of homozygosity associated with male fertility in Italian Brown Swiss cattle.
+          <span class="pub-journal">Frontiers in Genetics,</span> 14, 1227310.
+        </li>
+        <li class="pub-item">
+          Nascimento, B. M., Wolfe, C. W., Weigel, K. A., &amp; Peñagaricano, F. (2023).
+          Effects of type traits, inbreeding, and production on survival in US Jersey cattle.
+          <span class="pub-journal">Journal of Dairy Science,</span> 106(7), 4825&ndash;4835.
+        </li>
+        <li class="pub-item">
+          De los Santos, J. A., Andrade, J. P. N., Cangiano, L. R., Iriarte, A., Peñagaricano, F., et al. (2023).
+          Transcriptomic analysis reveals gene expression changes in peripheral white blood cells of cows after embryo transfer: Implications for pregnancy tolerance.
+          <span class="pub-journal">Reproduction in Domestic Animals,</span> 58(7), 946&ndash;954.
+        </li>
+        <li class="pub-item">
+          Silva, F. A. C. C., Martins, T., Sponchiado, M., Rocha, C. C., Pohler, K. G., et al. (2023).
+          Hormonal profile prior to luteolysis modulates the uterine luminal transcriptome in the subsequent cycle in beef cross-bred cows.
+          <span class="pub-journal">Biology of Reproduction,</span> 108(6), 922&ndash;935.
+        </li>
+        <li class="pub-item">
+          Lauber, M. R., Peñagaricano, F., Fourdraine, R. H., Clay, J. S., &amp; Fricke, P. M. (2023).
+          Characterization of semen type prevalence and allocation in Holstein and Jersey females in the United States.
+          <span class="pub-journal">Journal of Dairy Science,</span> 106(5), 3748&ndash;3760.
+        </li>
+        <li class="pub-item">
+          Mirzaei, A., Merenda, V. R., Ferraretto, L. F., Shaver, R. D., Peñagaricano, F., et al. (2023).
+          Individual animal variability in rumination, activity, and lying behavior during the periparturient period of dairy cattle.
+          <span class="pub-journal">JDS Communications,</span> 4(3), 205&ndash;209.
+        </li>
+        <li class="pub-item">
+          Cavani, L., Gaddis, K. L. P., Baldwin, R. L., Santos, J. E. P., Koltes, J. E., et al. (2023).
+          Impact of parity differences on residual feed intake estimation in Holstein cows.
+          <span class="pub-journal">JDS Communications,</span> 4(3), 201&ndash;204.
+        </li>
+        <li class="pub-item">
+          Hatew, B., Peñagaricano, F., Balehegn, M., Jones, C. S., Dahl, G. E., et al. (2023).
+          Synergies of feed, management trainings, and genetics on milk production of dairy cows in the tropics: The case of Ethiopian smallholder farmers.
+          <span class="pub-journal">Frontiers in Animal Science,</span> 4, 1119786.
+        </li>
+        <li class="pub-item">
+          Amor&iacute;n, R., Liu, L., Moriel, P., DiLorenzo, N., Lancaster, P. A., &amp; Peñagaricano, F. (2023).
+          Maternal diet induces persistent DNA methylation changes in the muscle of beef calves.
+          <span class="pub-journal">Scientific Reports,</span> 13(1), 1587.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Earlier -->
+    <div class="pub-earlier-note">
+      <p>
+        For publications prior to 2023, please see
+        <a href="https://scholar.google.com/citations?user=1J7uzm4AAAAJ&hl=en" target="_blank">Google Scholar</a>.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/UwMadison_institutional-logo.png" alt="UW-Madison" class="footer-logo">
+        <h3>Peñagaricano Lab</h3>
+        <p>
+          Quantitative Genomics &amp; Computational Biology<br>
+          Department of Animal &amp; Dairy Sciences<br>
+          University of Wisconsin-Madison<br>
+          1675 Observatory Drive<br>
+          Madison, WI 53706
+        </p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="people.html">People</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="software.html">Software</a></li>
+          <li><a href="opportunities.html">Opportunities</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://andysci.wisc.edu/" target="_blank">Animal &amp; Dairy Sciences</a></li>
+          <li><a href="https://www.wisc.edu/" target="_blank">UW-Madison</a></li>
+          <li><a href="https://scholar.google.com/citations?user=1J7uzm4AAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+          <li><a href="https://erp.wisc.edu/staff/penagaricano-francisco/" target="_blank">ERP Program</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Peñagaricano Lab &middot; University of Wisconsin-Madison</span>
+      <a href="https://andysci.wisc.edu/" target="_blank">Department of Animal &amp; Dairy Sciences</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Nav scroll effect + mobile toggle
+const nav = document.getElementById('siteNav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
+
+// Collapsible year sections
+function toggleYear(header) {
+  const year = header.getAttribute('data-year');
+  const body = document.getElementById('year-' + year);
+  const isCollapsed = header.classList.toggle('collapsed');
+  if (isCollapsed) {
+    body.style.maxHeight = '0';
+    body.classList.add('collapsed');
+  } else {
+    body.classList.remove('collapsed');
+    body.style.maxHeight = body.scrollHeight + 'px';
+  }
+}
+
+// Start all years collapsed
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.pub-year-body').forEach(function(body) {
+    body.style.maxHeight = '0';
+    body.classList.add('collapsed');
+  });
+  document.querySelectorAll('.pub-year-toggle').forEach(function(header) {
+    header.classList.add('collapsed');
+  });
+});
+</script>
+</body>
+</html>
