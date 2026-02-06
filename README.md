@@ -3,7 +3,7 @@
 **Quantitative Genomics & Computational Biology**
 Department of Animal & Dairy Sciences, University of Wisconsin-Madison
 
-Live: [ubilginer.github.io/penagaricano-lab-site](https://ubilginer.github.io/penagaricano-lab-site/)
+Live: [fpenagaricano-lab.github.io](https://fpenagaricano-lab.github.io/)
 
 ---
 
