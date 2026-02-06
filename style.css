@@ -67,11 +67,11 @@ a:hover { color: var(--accent); }
   z-index: 1001;
   background: #C5050C;
   color: #ffffff;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.03em;
-  padding: 0.4rem 0;
-  height: 34px;
+  padding: 0.55rem 0;
+  height: 42px;
 }
 .uw-top-banner .container {
   display: flex;
@@ -90,7 +90,7 @@ a:hover { color: var(--accent); }
   color: #ffffff;
 }
 .uw-banner-crest {
-  height: 18px;
+  height: 24px;
   width: auto;
 }
 
@@ -127,7 +127,7 @@ button:focus-visible {
 
 /* --- Navigation --- */
 .site-nav {
-  position: fixed; top: 34px; left: 0; right: 0; z-index: 1000;
+  position: fixed; top: 42px; left: 0; right: 0; z-index: 1000;
   background: rgba(30, 58, 95, 0.97);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -213,7 +213,7 @@ button:focus-visible {
   align-items: center;
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 40%, var(--primary-light) 100%);
   overflow: hidden;
-  padding-top: 104px; /* 34px UW banner + 70px nav */
+  padding-top: 112px; /* 42px UW banner + 70px nav */
 }
 .hero::before {
   content: '';
@@ -973,7 +973,7 @@ button:focus-visible {
 /* --- Page Headers (non-home) --- */
 .page-header {
   background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-  padding: calc(8rem + 34px) 0 3rem;
+  padding: calc(8rem + 42px) 0 3rem;
   text-align: center;
 }
 .page-header h1 {
@@ -1005,7 +1005,7 @@ button:focus-visible {
   .pi-links { justify-content: center; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr; }
-  .hero { min-height: auto; padding-top: 134px; padding-bottom: 4rem; } /* 34px UW banner + 100px */
+  .hero { min-height: auto; padding-top: 142px; padding-bottom: 4rem; } /* 42px UW banner + 100px */
 }
 
 @media (max-width: 600px) {
